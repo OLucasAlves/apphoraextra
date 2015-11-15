@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">AppHoraExtra</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="tvsalario">Salario</string>
+    <string name="salario">Digite seu salario</string>
+    <string name="tvhora">Horas Trabalhadas</string>
+   	<string name="hora">Horas trabalhadas</string>  
     <string name="action_settings">Settings</string>
 
 </resources>
