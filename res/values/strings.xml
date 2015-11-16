@@ -2,10 +2,14 @@
 <resources>
 
     <string name="app_name">AppHoraExtra</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Tela Principal -->
     <string name="tvsalario">Salario</string>
     <string name="salario">Digite seu salario</string>
     <string name="tvhora">Horas Trabalhadas</string>
    	<string name="hora">Horas trabalhadas</string>  
-    <string name="action_settings">Settings</string>
-
+    <string name="radio50">50%</string>
+	<string name="radio100">100%</string>
+	<string name="confirmar">Confirmar</string>
 </resources>
