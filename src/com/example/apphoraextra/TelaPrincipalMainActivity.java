@@ -42,7 +42,7 @@ public class TelaPrincipalMainActivity extends Activity {
 			public void onClick(View v) {
 				
 				calcular();
-				Toast.makeText(TelaPrincipalMainActivity.this,"Seu salario é" +novoSalario, Toast.LENGTH_LONG).show();
+				Toast.makeText(TelaPrincipalMainActivity.this,"Seu salario é " +novoSalario, Toast.LENGTH_LONG).show();
 			}
 		});
 		
@@ -72,10 +72,12 @@ public class TelaPrincipalMainActivity extends Activity {
 		hora = Double.parseDouble(edtHoraTrab.getText().toString());
 		
 		if(r50.isChecked()){
-			novoSalario = ((salario / 220) * 0.50) * hora; 
+			novoSalario = salario + ((salario / 220) * 0.50) * hora; 
 		}else{
-			novoSalario = ((salario / 220) * 1) * hora;
+			novoSalario = salario + ((salario / 220) * 1) * hora;
+			
 		}
+		;
 		return novoSalario;
 		
 	}
