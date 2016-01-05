@@ -1,24 +1,15 @@
 package com.example.modelo.bean;
 
 public class Funcionario {
-	private String nome;
+	private double novoSalario;
 	private double salario;
-	private double horastrab;
-	private double tipo;
+	private double hora;
 	
-	public Funcionario(){}
-	
-	public Funcionario(double salario,double horasTrab,double tipo){
-		this.salario = salario;
-		this.horastrab = horasTrab;
-		this.tipo = tipo;
+	public double getNovoSalario() {
+		return novoSalario;
 	}
-	
-	public String getNome() {
-		return nome;
-	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setNovoSalario(double novoSalario) {
+		this.novoSalario = novoSalario;
 	}
 	public double getSalario() {
 		return salario;
@@ -26,19 +17,12 @@ public class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	public double getHorastrab() {
-		return horastrab;
+	public double getHora() {
+		return hora;
 	}
-	public void setHorastrab(double horastrab) {
-		this.horastrab = horastrab;
+	public void setHora(double hora) {
+		this.hora = hora;
 	}
-	public double getTipo() {
-		return tipo;
-	}
-	public void setTipo(double tipo) {
-		this.tipo = tipo;
-	}
-	
-	
+
 	
 }

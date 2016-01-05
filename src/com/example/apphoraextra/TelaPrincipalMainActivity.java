@@ -1,6 +1,9 @@
 package com.example.apphoraextra;
 
-import com.example.controle.FuncionarioControle;
+import java.math.BigDecimal;
+import java.util.Locale;
+
+import com.example.helper.FuncionarioHelper;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -72,12 +75,13 @@ public class TelaPrincipalMainActivity extends Activity {
 		hora = Double.parseDouble(edtHoraTrab.getText().toString());
 		
 		if(r50.isChecked()){
-			novoSalario = salario + ((salario / 220) * 0.50) * hora; 
+			novoSalario = salario + ((salario / 220) * 0.50) * hora;
+			novoSalario = Double.valueOf(String.format(Locale.US, "%.2f", novoSalario));
 		}else{
 			novoSalario = salario + ((salario / 220) * 1) * hora;
-			
+			novoSalario = Double.valueOf(String.format(Locale.US, "%.2f", novoSalario));
 		}
-		;
+		
 		return novoSalario;
 		
 	}
